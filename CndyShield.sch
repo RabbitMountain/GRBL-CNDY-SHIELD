@@ -14341,7 +14341,7 @@ LED</description>
 <text x="73.66" y="165.1" size="5.08" layer="97">ARDUINO</text>
 <text x="10.16" y="88.9" size="5.08" layer="97">12V POWER IN</text>
 <text x="162.56" y="20.32" size="2.54" layer="97">Andrew Barney</text>
-<text x="162.56" y="15.24" size="2.54" layer="97">08.02.2021</text>
+<text x="162.56" y="15.24" size="2.54" layer="97">08.04.2021</text>
 <text x="73.66" y="104.14" size="1.778" layer="97">QWIIC ADAPTER</text>
 <text x="162.56" y="5.08" size="2.54" layer="97">Original INDYSHIELD V1 by 
 NIKODEM BARTNIK</text>

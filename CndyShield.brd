@@ -204,7 +204,7 @@ Added an arduino reset button.
 
 V1.1: Remapped analog breakouts &amp; added alarm led on analog 4.
 Added decoupling noise reduction capacitors.</text>
-<text x="81.915" y="43.815" size="2.54" layer="25" rot="R90">08.02.2021</text>
+<text x="81.915" y="43.815" size="2.54" layer="25" rot="R90">08.04.2021</text>
 <text x="97.79" y="45.72" size="0.8128" layer="25" rot="R90">GND</text>
 <text x="97.79" y="60.325" size="0.8128" layer="25" rot="R90">GND</text>
 <text x="44.45" y="74.93" size="0.8128" layer="25">GND</text>
@@ -228,18 +228,19 @@ CNC</text>
 <text x="103.505" y="34.29" size="2.54" layer="21" font="vector" ratio="20" rot="R90">CNDY SHIELD</text>
 <text x="49.53" y="19.685" size="1.778" layer="21" font="vector" ratio="20">HOLD</text>
 <text x="60.325" y="19.685" size="1.778" layer="21" font="vector" ratio="20">START</text>
-<text x="82.55" y="19.685" size="1.778" layer="21" font="vector" ratio="20">LIGHT</text>
+<text x="83.185" y="19.685" size="1.778" layer="21" font="vector" ratio="20">MIST</text>
 <text x="92.075" y="19.685" size="1.778" layer="21" font="vector" ratio="20">PROBE</text>
 <text x="100.965" y="62.865" size="2.54" layer="21" font="vector" ratio="20" rot="R90">V1.1</text>
 <text x="47.625" y="22.86" size="1.778" layer="21" font="vector" ratio="20" rot="R90">12V IN</text>
 <text x="47.625" y="33.655" size="1.778" layer="21" font="vector" ratio="20" rot="R90">5V OUT</text>
-<circle x="100.33" y="25.4" radius="1.27" width="0.508" layer="21"/>
 <text x="91.44" y="29.845" size="1.778" layer="21" font="vector" ratio="20">ALARM</text>
 <text x="55.245" y="63.5" size="0.8128" layer="25" rot="R270">A5</text>
 <text x="57.785" y="63.5" size="0.8128" layer="25" rot="R270">A4</text>
 <text x="47.625" y="48.26" size="2.54" layer="21" font="vector" ratio="20">X</text>
 <text x="47.625" y="59.69" size="2.54" layer="21" font="vector" ratio="20">Y</text>
 <text x="47.625" y="71.12" size="2.54" layer="21" font="vector" ratio="20">Z</text>
+<circle x="100.33" y="25.4" radius="0.898025" width="0.3048" layer="21"/>
+<circle x="97.79" y="25.4" radius="0.898025" width="0.3048" layer="21"/>
 </plain>
 <libraries>
 <library name="con-wago-500" urn="urn:adsk.eagle:library:195">
@@ -8206,18 +8207,18 @@ design rules under a new name.</description>
 <wire x1="80.2062" y1="88.1888" x2="83.305" y2="85.09" width="0.508" layer="1"/>
 <wire x1="64.8138" y1="88.1888" x2="80.2062" y2="88.1888" width="0.508" layer="1"/>
 <polygon width="0.508" layer="1" spacing="0.8128" isolate="0.3048" orphans="yes">
-<vertex x="36.195" y="14.605"/>
-<vertex x="36.195" y="85.725"/>
-<vertex x="39.37" y="88.9"/>
-<vertex x="98.425" y="88.9"/>
-<vertex x="102.235" y="85.09"/>
+<vertex x="36.195" y="13.97"/>
+<vertex x="36.195" y="86.995"/>
+<vertex x="38.1" y="88.9"/>
+<vertex x="100.33" y="88.9"/>
+<vertex x="102.235" y="86.995"/>
 <vertex x="102.235" y="62.865"/>
 <vertex x="104.775" y="60.325"/>
 <vertex x="104.775" y="27.94"/>
 <vertex x="102.235" y="25.4"/>
-<vertex x="102.235" y="14.605"/>
-<vertex x="99.695" y="12.065"/>
-<vertex x="38.735" y="12.065"/>
+<vertex x="102.235" y="13.97"/>
+<vertex x="100.33" y="12.065"/>
+<vertex x="38.1" y="12.065"/>
 </polygon>
 <wire x1="38.735" y1="74.89" x2="40.64" y2="74.89" width="0.508" layer="16"/>
 <wire x1="42.545" y1="72.985" x2="40.64" y2="74.89" width="0.508" layer="16"/>
@@ -8229,10 +8230,9 @@ design rules under a new name.</description>
 <wire x1="40.025" y1="52.05" x2="40.005" y2="52.03" width="0.508" layer="16"/>
 <wire x1="40.005" y1="52.03" x2="38.735" y2="52.03" width="0.508" layer="16"/>
 <wire x1="42.545" y1="61.555" x2="42.545" y2="54.57" width="0.508" layer="16"/>
-<wire x1="38.735" y1="40.6" x2="40.64" y2="40.6" width="0.508" layer="16"/>
-<wire x1="41.91" y1="41.87" x2="40.64" y2="40.6" width="0.508" layer="16"/>
+<wire x1="41.91" y1="43.775" x2="38.735" y2="40.6" width="0.508" layer="16"/>
 <wire x1="41.91" y1="50.165" x2="40.025" y2="52.05" width="0.508" layer="16"/>
-<wire x1="41.91" y1="41.87" x2="41.91" y2="50.165" width="0.508" layer="16"/>
+<wire x1="41.91" y1="43.775" x2="41.91" y2="50.165" width="0.508" layer="16"/>
 <contactref element="LY1" pad="1"/>
 <wire x1="41.91" y1="30.44" x2="40.64" y2="29.17" width="0.508" layer="1"/>
 <wire x1="38.735" y1="29.17" x2="40.64" y2="29.17" width="0.508" layer="1"/>
@@ -8329,14 +8329,17 @@ design rules under a new name.</description>
 <contactref element="X" pad="3"/>
 <contactref element="Z" pad="3"/>
 <contactref element="Y" pad="3"/>
-<wire x1="78.486" y1="73.66" x2="88.305" y2="83.479" width="0.508" layer="16"/>
-<wire x1="88.305" y1="83.479" x2="88.305" y2="85.09" width="0.508" layer="16"/>
 <wire x1="78.486" y1="73.66" x2="67.056" y2="85.09" width="0.508" layer="16"/>
 <wire x1="67.056" y1="85.09" x2="66.715" y2="85.09" width="0.508" layer="16"/>
 <wire x1="45.125" y1="85.09" x2="48.2238" y2="88.1888" width="0.508" layer="16"/>
 <wire x1="66.675" y1="85.09" x2="66.715" y2="85.09" width="0.508" layer="16"/>
 <wire x1="48.2238" y1="88.1888" x2="63.5762" y2="88.1888" width="0.508" layer="16"/>
 <wire x1="63.5762" y1="88.1888" x2="66.675" y2="85.09" width="0.508" layer="16"/>
+<wire x1="67.07369375" y1="85.09" x2="66.715" y2="85.09" width="0.508" layer="16"/>
+<wire x1="69.90579375" y1="87.9221" x2="67.07369375" y2="85.09" width="0.508" layer="16"/>
+<wire x1="86.77920625" y1="87.9221" x2="69.90579375" y2="87.9221" width="0.508" layer="16"/>
+<wire x1="88.305" y1="85.09" x2="88.305" y2="86.39630625" width="0.508" layer="16"/>
+<wire x1="88.305" y1="86.39630625" x2="86.77920625" y2="87.9221" width="0.508" layer="16"/>
 </signal>
 <signal name="N$1">
 <contactref element="U1" pad="D5"/>
@@ -8354,10 +8357,10 @@ design rules under a new name.</description>
 <signal name="N$3">
 <contactref element="U1" pad="D6"/>
 <contactref element="Y" pad="2"/>
-<wire x1="85.09" y1="73.66" x2="80.645" y2="78.105" width="0.508" layer="1"/>
-<via x="80.645" y="78.105" extent="1-16" drill="0.35"/>
-<wire x1="80.645" y1="78.105" x2="73.66" y2="85.09" width="0.508" layer="16"/>
-<wire x1="73.66" y1="85.09" x2="71.715" y2="85.09" width="0.508" layer="16"/>
+<wire x1="71.715" y1="85.09" x2="79.3604" y2="77.4446" width="0.508" layer="16"/>
+<wire x1="79.3604" y1="77.4446" x2="81.79553125" y2="77.4446" width="0.508" layer="16"/>
+<wire x1="85.09" y1="73.66" x2="85.09" y2="74.15013125" width="0.508" layer="16"/>
+<wire x1="85.09" y1="74.15013125" x2="81.79553125" y2="77.4446" width="0.508" layer="16"/>
 </signal>
 <signal name="N$4">
 <contactref element="Y" pad="1"/>
@@ -8477,18 +8480,18 @@ design rules under a new name.</description>
 </signal>
 <signal name="VCC">
 <polygon width="0.508" layer="16" spacing="0.8128" isolate="0.3048" orphans="yes">
-<vertex x="36.195" y="85.725"/>
-<vertex x="36.195" y="14.605"/>
-<vertex x="38.735" y="12.065"/>
-<vertex x="99.695" y="12.065"/>
-<vertex x="102.235" y="14.605"/>
+<vertex x="36.195" y="86.995"/>
+<vertex x="36.195" y="13.97"/>
+<vertex x="38.1" y="12.065"/>
+<vertex x="100.33" y="12.065"/>
+<vertex x="102.235" y="13.97"/>
 <vertex x="102.235" y="25.4"/>
 <vertex x="104.775" y="27.94"/>
 <vertex x="104.775" y="60.325"/>
 <vertex x="102.235" y="62.865"/>
-<vertex x="102.235" y="85.09"/>
-<vertex x="98.425" y="88.9"/>
-<vertex x="39.37" y="88.9"/>
+<vertex x="102.235" y="86.995"/>
+<vertex x="100.33" y="88.9"/>
+<vertex x="38.1" y="88.9"/>
 </polygon>
 </signal>
 <signal name="+12V">

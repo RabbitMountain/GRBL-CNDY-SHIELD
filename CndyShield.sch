@@ -14307,6 +14307,8 @@ LED</description>
 <part name="SUPPLY24" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="P+9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
 <part name="P+10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
+<part name="D2" library="SparkFun-LED" library_urn="urn:adsk.eagle:library:529" deviceset="LED" device="5MM" package3d_urn="urn:adsk.eagle:package:39353/1"/>
+<part name="R2" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="R-US_" device="0207/10" package3d_urn="urn:adsk.eagle:package:6240597/1" value="330"/>
 </parts>
 <sheets>
 <sheet>
@@ -14341,7 +14343,7 @@ LED</description>
 <text x="73.66" y="165.1" size="5.08" layer="97">ARDUINO</text>
 <text x="10.16" y="88.9" size="5.08" layer="97">12V POWER IN</text>
 <text x="162.56" y="20.32" size="2.54" layer="97">Andrew Barney</text>
-<text x="162.56" y="15.24" size="2.54" layer="97">08.04.2021</text>
+<text x="162.56" y="15.24" size="2.54" layer="97">08.08.2021</text>
 <text x="73.66" y="104.14" size="1.778" layer="97">QWIIC ADAPTER</text>
 <text x="162.56" y="5.08" size="2.54" layer="97">Original INDYSHIELD V1 by 
 NIKODEM BARTNIK</text>
@@ -14432,22 +14434,22 @@ LED</text>
 <instance part="SUPPLY5" gate="GND" x="50.8" y="109.22" smashed="yes">
 <attribute name="VALUE" x="48.895" y="106.045" size="1.778" layer="96"/>
 </instance>
-<instance part="SPIN_E" gate="-1" x="193.04" y="68.58" smashed="yes">
-<attribute name="NAME" x="193.04" y="69.469" size="1.778" layer="95" rot="R180"/>
+<instance part="SPIN_E" gate="-1" x="193.04" y="58.42" smashed="yes">
+<attribute name="NAME" x="193.04" y="59.309" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="SPIN_E" gate="-2" x="193.04" y="63.5" smashed="yes">
-<attribute name="VALUE" x="190.5" y="59.817" size="1.778" layer="96"/>
-<attribute name="NAME" x="193.04" y="64.389" size="1.778" layer="95" rot="R180"/>
-</instance>
-<instance part="SPIN_DIR" gate="-1" x="193.04" y="53.34" smashed="yes">
+<instance part="SPIN_E" gate="-2" x="193.04" y="53.34" smashed="yes">
+<attribute name="VALUE" x="190.5" y="49.657" size="1.778" layer="96"/>
 <attribute name="NAME" x="193.04" y="54.229" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="SPIN_DIR" gate="-2" x="193.04" y="48.26" smashed="yes">
-<attribute name="VALUE" x="190.5" y="44.577" size="1.778" layer="96"/>
-<attribute name="NAME" x="193.04" y="49.149" size="1.778" layer="95" rot="R180"/>
+<instance part="SPIN_DIR" gate="-1" x="193.04" y="43.18" smashed="yes">
+<attribute name="NAME" x="193.04" y="44.069" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="SUPPLY6" gate="GND" x="210.82" y="43.18" smashed="yes">
-<attribute name="VALUE" x="208.915" y="40.005" size="1.778" layer="96"/>
+<instance part="SPIN_DIR" gate="-2" x="193.04" y="38.1" smashed="yes">
+<attribute name="VALUE" x="190.5" y="34.417" size="1.778" layer="96"/>
+<attribute name="NAME" x="193.04" y="38.989" size="1.778" layer="95" rot="R180"/>
+</instance>
+<instance part="SUPPLY6" gate="GND" x="210.82" y="33.02" smashed="yes">
+<attribute name="VALUE" x="208.915" y="29.845" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY7" gate="GND" x="114.3" y="116.84" smashed="yes" rot="R180">
 <attribute name="VALUE" x="116.205" y="120.015" size="1.778" layer="96" rot="R180"/>
@@ -14649,6 +14651,14 @@ LED</text>
 <instance part="P+10" gate="1" x="38.1" y="53.34" smashed="yes">
 <attribute name="VALUE" x="40.64" y="53.34" size="1.778" layer="96" rot="R90"/>
 </instance>
+<instance part="D2" gate="G$1" x="190.5" y="71.12" smashed="yes" rot="R90">
+<attribute name="NAME" x="195.072" y="67.691" size="1.778" layer="95" font="vector" rot="R180"/>
+<attribute name="VALUE" x="195.072" y="73.025" size="1.778" layer="96" font="vector" rot="R180" align="top-left"/>
+</instance>
+<instance part="R2" gate="G$1" x="203.2" y="71.12" smashed="yes" rot="R180">
+<attribute name="NAME" x="207.01" y="69.6214" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="207.01" y="74.422" size="1.778" layer="96" rot="R180"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -14693,12 +14703,16 @@ LED</text>
 <segment>
 <pinref part="SPIN_E" gate="-1" pin="KL"/>
 <pinref part="SUPPLY6" gate="GND" pin="GND"/>
-<wire x1="198.12" y1="68.58" x2="210.82" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="210.82" y1="68.58" x2="210.82" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="58.42" x2="210.82" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="58.42" x2="210.82" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="SPIN_DIR" gate="-1" pin="KL"/>
-<wire x1="210.82" y1="53.34" x2="210.82" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="198.12" y1="53.34" x2="210.82" y2="53.34" width="0.1524" layer="91"/>
-<junction x="210.82" y="53.34"/>
+<wire x1="210.82" y1="43.18" x2="210.82" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="43.18" x2="210.82" y2="43.18" width="0.1524" layer="91"/>
+<junction x="210.82" y="43.18"/>
+<pinref part="R2" gate="G$1" pin="1"/>
+<wire x1="208.28" y1="71.12" x2="210.82" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="71.12" x2="210.82" y2="58.42" width="0.1524" layer="91"/>
+<junction x="210.82" y="58.42"/>
 </segment>
 <segment>
 <pinref part="SUPPLY8" gate="GND" pin="GND"/>
@@ -14941,13 +14955,18 @@ LED</text>
 <net name="SPIN_E" class="0">
 <segment>
 <pinref part="SPIN_E" gate="-2" pin="KL"/>
-<wire x1="198.12" y1="63.5" x2="200.66" y2="63.5" width="0.1524" layer="91"/>
-<label x="200.66" y="63.5" size="1.016" layer="95" xref="yes"/>
+<wire x1="198.12" y1="53.34" x2="200.66" y2="53.34" width="0.1524" layer="91"/>
+<label x="200.66" y="53.34" size="1.016" layer="95" xref="yes"/>
+<label x="185.42" y="71.12" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="D11"/>
 <wire x1="124.46" y1="109.22" x2="124.46" y2="111.76" width="0.1524" layer="91"/>
 <label x="124.46" y="111.76" size="1.016" layer="95" rot="R90" xref="yes"/>
+</segment>
+<segment>
+<wire x1="185.42" y1="71.12" x2="187.96" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="D2" gate="G$1" pin="A"/>
 </segment>
 </net>
 <net name="SPIN_DIR" class="0">
@@ -14958,8 +14977,8 @@ LED</text>
 </segment>
 <segment>
 <pinref part="SPIN_DIR" gate="-2" pin="KL"/>
-<wire x1="198.12" y1="48.26" x2="200.66" y2="48.26" width="0.1524" layer="91"/>
-<label x="200.66" y="48.26" size="1.016" layer="95" xref="yes"/>
+<wire x1="198.12" y1="38.1" x2="200.66" y2="38.1" width="0.1524" layer="91"/>
+<label x="200.66" y="38.1" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="HOLD" class="0">
@@ -15137,6 +15156,13 @@ LED</text>
 <pinref part="D1" gate="G$1" pin="C"/>
 <pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="236.22" y1="53.34" x2="236.22" y2="50.8" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$11" class="0">
+<segment>
+<pinref part="D2" gate="G$1" pin="C"/>
+<pinref part="R2" gate="G$1" pin="2"/>
+<wire x1="195.58" y1="71.12" x2="198.12" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

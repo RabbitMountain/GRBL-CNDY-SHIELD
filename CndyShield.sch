@@ -18319,7 +18319,7 @@ The Rabbit Mountain Research (RMR) Trademark is not available to be used without
 <part name="SUPPLY6" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY7" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="PROBE" library="con-wago-500" library_urn="urn:adsk.eagle:library:195" deviceset="W237-102" device="" package3d_urn="urn:adsk.eagle:package:10688/1"/>
-<part name="LIGHT" library="con-wago-500" library_urn="urn:adsk.eagle:library:195" deviceset="W237-102" device="" package3d_urn="urn:adsk.eagle:package:10688/1"/>
+<part name="MIST" library="con-wago-500" library_urn="urn:adsk.eagle:library:195" deviceset="W237-102" device="" package3d_urn="urn:adsk.eagle:package:10688/1"/>
 <part name="5V" library="con-wago-500" library_urn="urn:adsk.eagle:library:195" deviceset="W237-102" device="" package3d_urn="urn:adsk.eagle:package:10688/1"/>
 <part name="SUPPLY8" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
@@ -18406,7 +18406,7 @@ The Rabbit Mountain Research (RMR) Trademark is not available to be used without
 <text x="10.16" y="88.9" size="5.08" layer="97">12V POWER IN</text>
 <text x="162.56" y="12.7" size="2.54" layer="97">Rabbit Mountain Research
 Andrew Barney
-08.08.2021</text>
+08.13.2021</text>
 <text x="73.66" y="104.14" size="1.778" layer="97">QWIIC ADAPTER</text>
 <text x="162.56" y="5.08" size="2.54" layer="97">Original INDYSHIELD V1 by 
 NIKODEM BARTNIK</text>
@@ -18524,10 +18524,10 @@ LED</text>
 <attribute name="VALUE" x="228.6" y="158.877" size="1.778" layer="96"/>
 <attribute name="NAME" x="231.14" y="163.449" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="LIGHT" gate="-1" x="231.14" y="154.94" smashed="yes">
+<instance part="MIST" gate="-1" x="231.14" y="154.94" smashed="yes">
 <attribute name="NAME" x="231.14" y="155.829" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="LIGHT" gate="-2" x="231.14" y="149.86" smashed="yes">
+<instance part="MIST" gate="-2" x="231.14" y="149.86" smashed="yes">
 <attribute name="VALUE" x="228.6" y="146.177" size="1.778" layer="96"/>
 <attribute name="NAME" x="231.14" y="150.749" size="1.778" layer="95" rot="R180"/>
 </instance>
@@ -18843,7 +18843,7 @@ LED</text>
 <junction x="248.92" y="104.14"/>
 <pinref part="PROBE" gate="-1" pin="KL"/>
 <wire x1="248.92" y1="167.64" x2="236.22" y2="167.64" width="0.1524" layer="91"/>
-<pinref part="LIGHT" gate="-1" pin="KL"/>
+<pinref part="MIST" gate="-1" pin="KL"/>
 <wire x1="236.22" y1="154.94" x2="248.92" y2="154.94" width="0.1524" layer="91"/>
 <junction x="248.92" y="154.94"/>
 </segment>
@@ -19190,12 +19190,6 @@ LED</text>
 <wire x1="129.54" y1="48.26" x2="129.54" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="LIGHT" class="0">
-<segment>
-<wire x1="236.22" y1="149.86" x2="238.76" y2="149.86" width="0.1524" layer="91"/>
-<pinref part="LIGHT" gate="-2" pin="KL"/>
-</segment>
-</net>
 <net name="ABORT" class="0">
 <segment>
 <wire x1="236.22" y1="99.06" x2="238.76" y2="99.06" width="0.1524" layer="91"/>
@@ -19238,6 +19232,10 @@ LED</text>
 <segment>
 <wire x1="236.22" y1="63.5" x2="236.22" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="D1" gate="G$1" pin="A"/>
+</segment>
+<segment>
+<wire x1="236.22" y1="149.86" x2="238.76" y2="149.86" width="0.1524" layer="91"/>
+<pinref part="MIST" gate="-2" pin="KL"/>
 </segment>
 </net>
 <net name="RESET" class="0">
